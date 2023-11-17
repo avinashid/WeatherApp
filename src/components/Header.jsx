@@ -10,7 +10,7 @@ const Header = () => {
         <WiDayLightWind className="text-4xl" />
         <div>Weather 99</div>
       </div>
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 cursor-pointer">
         <div className="text-2xl text-slate-400 bg-white rounded-full p-1">
           <WiCloudRefresh />
         </div>

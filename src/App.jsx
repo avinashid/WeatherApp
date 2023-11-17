@@ -7,14 +7,14 @@ import axios from "axios";
 const App = () => {
   const [city, setCity] = useState();
   const changeWeather = (cityData) => {
-    console.log(cityData);
     setCity(cityData);
   };
+  console.log()
   return (
     <div>
       <Header />
       <CitySearch changeWeather={changeWeather} />
-      {city && <WeatherContainer city={city} />}
+      {city!==undefined && <WeatherContainer city={city} />}
     </div>
   );
 };
